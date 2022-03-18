@@ -18,6 +18,20 @@
   --green: #34a853;
 }
 
+html {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -36,6 +50,16 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-flow: column;
+}
+@media (max-width: 768px) {
+  .container {
+    right: 10vw;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    right: 15vw;
+  }
 }
 .container .wire {
   width: 0.25rem;
@@ -142,6 +166,12 @@ body {
   align-items: center;
   flex-flow: column;
   font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100vw;
+  }
 }
 .content .line {
   margin: 0.5rem 0;
